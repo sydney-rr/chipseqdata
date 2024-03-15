@@ -1,0 +1,10 @@
+Package: chipseqdata
+Type: Package
+Title: Manipulating ChIP-Seq/MACS Data
+Version: 0.0.0.9000
+Author: Sydney Rattey
+Maintainer: Sydney Rattey <srattey4@gmail.com>
+Description: Manipulating ChIP-Seq/MACS data to determine where the transcription factor, Dal80, binds.
+License: CC0 1.0
+Encoding: UTF-8
+LazyData: true
