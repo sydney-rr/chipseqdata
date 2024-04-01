@@ -1,0 +1,41 @@
+---
+title: "Module12"
+output: html_document
+date: "2024-03-26"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+## First Function
+I think for my first function, I am going to calculate the percentage base content of fasta files
+```{r firstfunction, echo=TRUE}
+#install.packages("seqinr")
+library(seqinr)
+fasta <- read.fasta("/Users/sydneyrattey/downloads/M77821.1.fasta")
+
+
+percentA <- function(x){
+  my_dataframe <- as.data.frame(x)
+  fastalength <- length(my_dataframe[i,1])
+  A <- length(my_dataframe[i=="a",1])
+  (A/fastalength)*100
+}
+
+percentA(fasta)
+
+```
+## Other Functions
+Honestly, I am unsure what other functions I am going to create.
+I spent this week trying out different packages to manipulate biological data to 
+help me manipulate my data
+I tried out GenomicAlignments,BiocManager,Rsamtools,BSgenome,normr,ShortRead, and seqinr
+
+It honestly took me a long time just to write the function to find the percentage base
+content. This is because I needed to find a package that would allow me to import a fasta 
+file into r. Then I needed a figure out what format the package uploads the fasta file as
+(is it a list, a dataframe, etc). Then I needed to figure out how to manipulate the data.
+Then I needed to write a function, and I am honestly not very comfortable writing functions yet.
+
+However, I definitely think I want to write a function that finds motifs in the DNA sequences.
+I also think I want to write a function that somehow manipulates the SAM/BAM files.
